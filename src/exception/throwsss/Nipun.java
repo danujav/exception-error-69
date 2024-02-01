@@ -9,10 +9,13 @@ import java.io.FileNotFoundException;
 
 public class Nipun {
     public static void main(String[] args) {
+//        try catch ladder
         try {
             FileReaderDemo.readFile();
-        } catch(FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("File not found");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Class not found");
         }
     }
 }

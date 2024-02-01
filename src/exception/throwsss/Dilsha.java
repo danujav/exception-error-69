@@ -11,8 +11,8 @@ public class Dilsha {
     public static void main(String[] args) {
         try {
             FileReaderDemo.readFile();
-        } catch (FileNotFoundException e) {
-
+        } catch (Exception e) {
+            System.out.println("Exception caught");
         }
     }
 }

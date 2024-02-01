@@ -11,7 +11,7 @@ public class Nimsi {
     public static void main(String[] args) {
         try {
             FileReaderDemo.readFile();
-        } catch(FileNotFoundException e) {
+        } catch(FileNotFoundException  | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
