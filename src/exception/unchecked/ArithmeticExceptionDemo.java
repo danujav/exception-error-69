@@ -18,7 +18,10 @@ public class ArithmeticExceptionDemo {
             int result = n1 / n2;   //ArithmeticException
             System.out.println("Result: " + result);
         } catch(ArithmeticException e) {
-            System.out.println("OOPS! Cannot divide by zero.");
+
+//            System.out.println(e);
+            System.out.println(e.getMessage());
+//            System.out.println("OOPS! Cannot divide by zero.");
         }
 
         System.out.println("End of program.");
